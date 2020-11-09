@@ -6,6 +6,24 @@ namespace G7Cas20
     {
         static void Main(string[] args)
         {
+
+            // Null coalescing
+            
+            int? x = null;
+            int? z = 100;
+            int? rezab;
+
+            rezab = x ?? z;
+            Console.WriteLine("Vrednost rezab = {0}", rezab);
+
+            if (x < 10)
+            {
+                Console.WriteLine("Uradi nesto");
+            } else
+            {
+                Console.WriteLine("Uradi nesto drugo");
+            }
+
             // Nullables
 
             int? num1 = null;
@@ -47,9 +65,83 @@ namespace G7Cas20
              * 
              */
 
+            Console.WriteLine("======== Mathematical operators");
+
+            num1 = 4;
+            num2 = 3;
+            bool rez;
+
+            rez = num1 == num2;
+            Console.WriteLine("{0} = {1} => {2}", num1, num2, rez);
+            rez = num1 != num2;
+            Console.WriteLine("{0} != {1} => {2}", num1, num2, rez);
+            rez = num1 > num2;
+            Console.WriteLine("{0} > {1} => {2}", num1, num2, rez);
+            rez = num1 < num2;
+            Console.WriteLine("{0} < {1} => {2}", num1, num2, rez);
+            rez = num1 >= num2;
+            Console.WriteLine("{0} >= {1} => {2}", num1, num2, rez);
+            rez = num1 <= num2;
+            Console.WriteLine("{0} <= {1} => {2}", num1, num2, rez);
+
+            
+            Console.WriteLine("======== Logical operators");
+            bool val1, val2;
+
+            val1 = true;
+            val2 = false;
+
+            rez = val1 && val2;
+            Console.WriteLine("{0} AND {1} => {2}", val1, val2, rez);
+            rez = val1 || val2;
+            Console.WriteLine("{0} OR {1} => {2}", val1, val2, rez);
+            rez = !(val1 || val2);
+            Console.WriteLine("{0} OR {1} NOT => {2}", val1, val2, rez);
+
+            int a = 101;
+            int b = 201;
+
+            if (a == 100)
+            {
+                if (b == 200)
+                {
+                    Console.WriteLine("Value of a = {0} and b = {1}", a, b);
+                }
+            }
+            else
+            {
+                if (b < 100)
+                {
+                    Console.WriteLine("a is not 100, and b is {0}", b);
+                }
+                else
+                {
+                    Console.WriteLine("b is not less than 100");
+                }
+            }
+            Console.WriteLine("Exact value of a is {0}", a);
+            Console.WriteLine("Exact value of b is {0}", b);
+
+            int s;
+
+            s = 4;
+
+            switch(s)
+            {
+                case 1:
+                    Console.WriteLine("s = 1");
+                    break;
+
+                case 2:
+                    Console.WriteLine("s = 2");
+                    break;
+
+                default:
+                    Console.WriteLine("DEFAULT: s = {0}", s);
+                    break;
+            }
 
             Console.ReadKey();
-
 
 
             // Constants
