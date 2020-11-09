@@ -8,7 +8,7 @@ namespace G7Cas20
         {
 
             // Null coalescing
-            
+            Console.WriteLine("======== Null coalescing operator (??)");
             int? x = null;
             int? z = 100;
             int? rezab;
@@ -24,8 +24,9 @@ namespace G7Cas20
                 Console.WriteLine("Uradi nesto drugo");
             }
 
-            // Nullables
 
+            Console.WriteLine("======== Arithmetic operators");
+            // Nullables
             int? num1 = null;
             int num2;
             double rezultat;
@@ -98,6 +99,8 @@ namespace G7Cas20
             rez = !(val1 || val2);
             Console.WriteLine("{0} OR {1} NOT => {2}", val1, val2, rez);
 
+
+            Console.WriteLine("======== IF");
             int a = 101;
             int b = 201;
 
@@ -122,8 +125,8 @@ namespace G7Cas20
             Console.WriteLine("Exact value of a is {0}", a);
             Console.WriteLine("Exact value of b is {0}", b);
 
+            Console.WriteLine("======== SWITCH");
             int s;
-
             s = 4;
 
             switch(s)
