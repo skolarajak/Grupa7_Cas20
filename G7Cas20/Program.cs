@@ -141,11 +141,11 @@ namespace G7Cas20
                     break;
             }
 
-            Console.ReadKey();
+
+            Console.WriteLine("========================");
 
 
             // Constants
-            /*
             const double PI = 3.14159;
             double r;
 
@@ -155,10 +155,6 @@ namespace G7Cas20
             double area = PI * r * r;
             Console.WriteLine("Radijus: {0}, povrsina: {1}", r, area);
             Console.ReadKey();
-            */
-
-
-
             
         }
     }
